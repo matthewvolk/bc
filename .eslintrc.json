@@ -1,0 +1,23 @@
+{
+  "extends": ["next/core-web-vitals", "prettier"],
+  "plugins": ["react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "parent", "sibling", "index"],
+        "newlines-between": "always",
+        "alphabetize": { "order": "asc" },
+        "warnOnUnassignedImports": true
+      }
+    ],
+    "no-unused-vars": "error",
+    "react/jsx-sort-props": "error",
+    "react/no-deprecated": "off"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "bc",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier . --check",
+    "db:push": "drizzle-kit push:sqlite",
+    "db:gen": "drizzle-kit generate:sqlite",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.5.0",
+    "@lucia-auth/adapter-drizzle": "^1.0.2",
+    "arctic": "^1.1.6",
+    "drizzle-orm": "^0.29.3",
+    "geist": "^1.2.2",
+    "lucia": "^3.0.1",
+    "next": "14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.17",
+    "dotenv": "^16.4.4",
+    "drizzle-kit": "^0.20.14",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.1.0",
+    "eslint-config-prettier": "^9.1.0",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}
